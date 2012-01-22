@@ -1,0 +1,20 @@
+# View Helpers
+
+In your view scripts, often it is necessary to perform certain complex functions over and over: e.g., formatting a date, generating form elements, etc. You can use helper classes to perform these behaviours for you.
+
+See: http://framework.zend.com/manual/en/zend.view.helpers.html
+
+To use a helper in your view script, call it using $this->helperName(). 
+
+Behind the scenes, Zend_View will load the Zend_View_Helper_HelperName class, create an object instance of it, and call its helperName() method. 
+
+The object instance is persistent within the Zend_View instance, and is reused for all future calls to $this->helperName().
+
+
+# URL View Helper
+
+url($urlOptions, $name, $reset)
+
+$urlOptions should be an associative array of key/value pairs used by the particular route.
+$name => Route name (optional)
+$reset => Reset url params (optional)

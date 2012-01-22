@@ -1,0 +1,17 @@
+Zend_Db_Table
+
+The Zend_Db_Table class is an object-oriented interface to database tables. It provides methods for many common operations on tables. The base class is extensible, so you can add custom logic.
+
+
+The Zend_Db_Table solution is an implementation of the Table Data Gateway pattern.
+
+	http://www.martinfowler.com/eaaCatalog/tableDataGateway.html
+
+
+
+The solution also includes a class that implements the » Row Data Gateway pattern.
+
+	http://www.martinfowler.com/eaaCatalog/rowDataGateway.html
+
+
+Reference: http://framework.zend.com/manual/en/zend.db.table.html

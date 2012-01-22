@@ -1,0 +1,10 @@
+# User defined Links + URL View Helper 
+
+url($urlOptions, $name, $reset)
+
+Creates a URL string based on a named route. $urlOptions should be an associative array of key/value pairs used by the particular route.
+
+
+# Example
+
+<a href="<?php echo $this->url(array(), 'help'); ?>">Help</a>

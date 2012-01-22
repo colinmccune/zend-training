@@ -1,0 +1,57 @@
+# IndexController.php
+
+public function viewFeedbackAction()
+{
+    // get feedback entries
+    $this->view->feedbackEntries = $this->_getFeedback1();
+}
+
+private function _getFeedback1() {
+    $db = Zend_Registry::get('Zend_Db');
+
+    $sql = 'SELECT * FROM feedback';
+    $result = $db->fetchAll($sql);
+
+    //$sql = 'SELECT * FROM feedback WHERE id = ?';
+    //$result = $db->fetchAll($sql, 5);
+
+    //$name = "; delete from feedback";
+    //$sql = 'SELECT * FROM feedback WHERE name = ?';
+    //$result = $db->fetchAll($sql, $name);
+
+    //$sql = 'SELECT * FROM feedback ORDER BY feeling DESC';
+    //$result = $db->fetchAll($sql);
+
+    error_log(print_r($result, TRUE));
+
+    return $result;
+}
+
+
+# view-feedback.phtml
+
+<h1>View Feedback</h1>
+
+<table border="1">
+    
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>topic</th>
+        <th>feeling</th>
+        <th>feedback</th>
+    </tr>
+    
+    <?php foreach ($this->feedbackEntries as $feedbackEntry): ?>
+        <tr>
+            <td><?php echo $this->escape($feedbackEntry['id']); ?></td>
+            <td><?php echo $this->escape($feedbackEntry['name']); ?></td>
+            <td><?php echo $this->escape($feedbackEntry['email']); ?></td>
+            <td><?php echo $this->escape($feedbackEntry['topic']); ?></td>
+            <td><?php echo $this->escape($feedbackEntry['feeling']); ?></td>
+            <td><?php echo $this->escape($feedbackEntry['feedback']); ?></td>            
+        </tr>
+    <?php endforeach; ?>
+    
+</table>

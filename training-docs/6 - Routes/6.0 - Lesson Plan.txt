@@ -1,0 +1,10 @@
+# 6. Routes
+
+Show: "6.1 - Chapter Overview"
+Show: "6.2 - Router Overview"
+
+Follow Along: "6.3 - Route Configuration"
+Follow Along: "6.4 - URL Helper"
+
+Exercise: "6.5 - Exercise - Feedback and Thank You"
+Exercise Answer: "6.6 - Exercise - Feedback and Thank You - Answer"

@@ -1,0 +1,12 @@
+# Chapter Objective
+
+Provide and overview of the Zend's Cycle, Paginator, and Cache components.
+
+
+# Tasks
+
+- Apply a every other row highlight to the View Feedback table.
+
+- Paginate the View Feedback table.
+
+- Use Zend_Cache to cache the result of a time consuming operation.

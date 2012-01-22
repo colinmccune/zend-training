@@ -1,0 +1,57 @@
+Exercise 2 - Language Switcher - Answers
+
+1. Use Zend_Session to store the locale.
+
+protected function _initSession()
+{
+    Zend_Session::start();
+}
+
+2. Set the locale based off the value in the session and default to en.
+
+protected function _initLocale()
+{
+    // init dependencies
+    $this->bootstrap('Session');        
+
+    // init resource
+    $currentLocale = 'en';  // default = 'en'
+
+    // get locale from session
+    $defaultNamespace = new Zend_Session_Namespace('Default');
+
+    if (isset($defaultNamespace->locale)) {
+        $currentLocale = $defaultNamespace->locale;
+    } else {
+        $defaultNamespace->locale = $currentLocale;
+    }
+
+    // set locale
+    $locale = new Zend_Locale($currentLocale);
+
+    // register resource
+    Zend_Registry::set('locale', $locale);
+    Zend_Registry::set('Zend_Locale', $locale);
+
+    // return resource
+    return $locale;
+}
+
+3. Create a new action
+
+public function switchLanguageAction()
+{
+    $defaultNamespace = new Zend_Session_Namespace('Default');
+
+    $nextLocale = ($defaultNamespace->locale == 'en') ? 'fr' : 'en';
+    $defaultNamespace->locale = $nextLocale;
+
+    return $this->_helper->redirector('index');
+}
+
+4. Create a "Change Language" link on the top of all the pages.
+
+<div id="top-menu">
+    <a href="/"><?php echo $this->translate('Home'); ?></a>
+    <a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'switch-language')); ?>"><?php echo $this->translate('Change Language'); ?></a>
+</div>

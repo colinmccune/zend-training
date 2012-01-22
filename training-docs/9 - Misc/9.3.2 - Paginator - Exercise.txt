@@ -1,0 +1,9 @@
+# View Feedback Paged Action and View
+
+1. Create new a action called "viewFeedbackPaged".
+
+2. Create new view with the same content as the "view-feedback.phtml"
+
+3. Create new route for "/view-feedback-paged" and configure the route to have a "page" parameter with a default value of "1".
+
+4. Create new menu item on home page linking to the "View Feedback Paged" page.

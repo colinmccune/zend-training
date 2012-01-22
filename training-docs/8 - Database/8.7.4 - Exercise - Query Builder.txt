@@ -1,0 +1,7 @@
+Referring to the Zend DB Select documentation write a query that:
+
+1. Where "topic = board" and "feeling = 10";
+2. Where "id = 5" or "topic = board", or "feeling = 10";
+3. Limit to 5.
+
+Reference: http://framework.zend.com/manual/en/zend.db.select.html

@@ -1,0 +1,14 @@
+Zend_Layout implements a classic Two Step View pattern, allowing developers to wrap application content within another view, usually representing the site template.
+The main goals of Zend_Layout are as follows:
+
+- Automate selection and rendering of layouts when used with the Zend Framework MVC components.
+
+- Provide separate scope for layout related variables and content.
+
+- Allow configuration, including layout name, layout script resolution (inflection), and layout script path.
+
+- Allow disabling layouts, changing layout scripts, and other states; allow these actions from within action controllers and view scripts.
+
+- Follow same script resolution rules (inflection) as the ViewRenderer, but allow them to also use different rules.
+
+- Allow usage without Zend Framework MVC components.

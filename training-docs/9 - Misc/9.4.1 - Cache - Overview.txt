@@ -1,0 +1,45 @@
+Intro
+
+Zend_Cache provides a generic way to cache any data.
+
+Zend_Cache makes use of:
+
+- Frontends which are used to capture data that you want to cache.
+- Backends which are used to store/persist the captured data.
+
+
+All cached items have
+
+- A unique identifier (a string) which is used to identify the cached record.
+
+- A lifetime which defines how long a resource is considered fresh.
+
+
+You can
+
+- Tagging cache records so that you can organize the cache.
+- Invalidate individual cached items, groups of tagged items, or the whole cache.
+
+http://framework.zend.com/manual/en/zend.cache.introduction.html
+http://framework.zend.com/manual/en/zend.cache.theory.html
+
+
+Frontends
+
+Lot's to choose from.
+
+http://framework.zend.com/manual/en/zend.cache.frontends.html
+
+
+Backends
+
+Lot's to choose from.
+
+http://framework.zend.com/manual/en/zend.cache.backends.html
+
+
+Creating a Cache
+
+See: The Zend_Cache Factory Method
+
+http://framework.zend.com/manual/en/zend.cache.theory.html

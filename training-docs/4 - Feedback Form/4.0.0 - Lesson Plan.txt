@@ -1,0 +1,45 @@
+# 4.0 - Feedback Form
+
+(4.0) Overview
+
+Show: "4.0.1 - Chapter Overview"
+
+
+(4.1) Page Setup
+
+Show: "4.1.1 - Page Setup - Feedback"
+Show: "4.1.2 - Page Setup - Home"
+
+Exercise: "4.1.3 - Page Setup - Exercise"
+Exercise Answer: "4.1.3 - Page Setup - Exercise - Answer"
+
+
+(4.2) Create Form
+
+Taking Point: Let's create the actual form now.
+
+Show: "4.2.1 - Feedback"
+Show: "4.2.2 - Feedback - Start".
+
+Follow Along: "4.2.3 - Feedback - Code 1"
+Follow Along: "4.2.4 - Controller and View - Code 1"
+Demo: Form Submit
+
+Talking Point: Zend Validators, and Zend Filters
+- http://framework.zend.com/manual/en/zend.validate.set.html
+- http://framework.zend.com/manual/en/zend.filter.set.html
+
+Follow Along: "4.2.5 - Feedback - Code 2"
+Demo: Form errors, StringTrim, Alpha Only, and error logs.
+
+Follow Along: "4.2.6 - Feedback - Code 3"
+
+Demo: Submit final form.
+
+(4.3) Thank you page
+
+Show: "4.3.1 - Thank You"
+Follow Along: "4.3.2 - Controller and View - Code"
+Demo: Test thank you page.
+
+Follow Along: "4.3.3 - Redirector"

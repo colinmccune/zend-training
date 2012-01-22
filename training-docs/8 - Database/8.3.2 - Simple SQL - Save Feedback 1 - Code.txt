@@ -1,0 +1,41 @@
+# Inserting Data to the Database via Zend Adapter
+
+http://framework.zend.com/manual/en/ #zend.db.adapter.write.insert
+
+
+# IndexController.php
+
+public function feedbackAction()
+{
+    $request = $this->getRequest();
+
+    $form = new Application_Form_Feedback();
+
+    if ($this->getRequest()->isPost()) {
+
+        if ($form->isValid($request->getPost())) {
+
+            // save data
+            $this->_saveFeedback1($form);
+
+            // redirect to home
+            //return $this->_helper->redirector('index');
+            return $this->_helper->redirector->gotoSimple('thank-you', 'index');
+
+        }
+    }
+
+    $this->view->form = $form;
+}
+
+private function _saveFeedback1($form)
+{
+    error_log(print_r($form->getValues(), true));
+
+    $data = array(
+        'name' => $form->getValue('name'),
+    );
+
+    $db = Zend_Registry::get('Zend_Db');
+    $db->insert('feedback', $data);
+}

@@ -1,0 +1,18 @@
+Zend_Db_Select
+
+# Introduction
+
+The Zend_Db_Select object represents a SQL SELECT query statement. The class has methods for adding individual parts to the query. You can specify some parts of the query using PHP methods and data structures, and the class forms the correct SQL syntax for you. After you build a query, you can execute the query as if you had written it as a string.
+The value offered by Zend_Db_Select includes:
+
+- Object-oriented methods for specifying SQL queries in a piece-by-piece manner;
+
+- Database-independent abstraction of some parts of the SQL query;
+
+- Automatic quoting of metadata identifiers in most cases, to support identifiers containing SQLreserved words and special characters;
+
+- Quoting identifiers and values, to help reduce risk of SQL injection attacks. Using Zend_Db_Select is not mandatory. For very simple SELECT queries, it is usually simpler to specify the entire SQL query as a string and execute it using Adapter methods like query() orfetchAll(). Using Zend_Db_Select is helpful if you need to assemble a SELECT query procedurally, or based on conditional logic in your application.
+
+# Reference
+
+http://framework.zend.com/manual/en/zend.db.select.html

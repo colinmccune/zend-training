@@ -1,0 +1,27 @@
+Zend_Paginator is a flexible component for paginating collections of data and presenting that data to users.
+
+The primary design goals of Zend_Paginator are as follows:
+
+- Paginate arbitrary data, not just relational databases
+- Fetch only the results that need to be displayed
+- Do not force users to adhere to only one way of displaying data or rendering pagination controls
+- Loosely couple Zend_Paginator to other Zend Framework components so that users who wish to use it independently of Zend_View, Zend_Db, etc. can do so
+
+
+# Adapters for Zend_Paginator
+
+Array => Use a PHP array
+
+DbSelect => Use a Zend_Db_Select instance, which will return an array
+
+DbTableSelect => Use a Zend_Db_Table_Select instance, which will return an instance of 
+
+Zend_Db_Table_Rowset_Abstract. This provides additional information about the result set, such as column names.
+
+Iterator => Use an Iterator instance
+
+Null => Do not use Zend_Paginator to manage data pagination. You can still take advantage of the pagination control feature.
+
+# Reference:
+
+http://framework.zend.com/manual/en/zend.paginator.usage.html

@@ -1,0 +1,15 @@
+# Crunch Data Paged Action and View
+
+1. Create new a action called Crunch Data.
+
+- Using a loop increment a counter by +1 for 100,000,000 times.
+
+- Set a variable on the view with the final value of the counter.
+
+2. Create new view.
+
+- Print the counter value.
+
+3. Create new route.
+
+4. Create new menu item on home page.

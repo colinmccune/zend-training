@@ -1,0 +1,27 @@
+<h1><?php echo $this->translate('View Feedback Paged'); ?></h1>
+
+<table>
+    
+    <tr>
+        <th><?php echo $this->translate('id'); ?></th>
+        <th><?php echo $this->translate('Name'); ?></th>
+        <th><?php echo $this->translate('Email'); ?></th>
+        <th><?php echo $this->translate('Topic'); ?></th>
+        <th><?php echo $this->translate('Feeling'); ?></th>
+        <th><?php echo $this->translate('Feedback'); ?></th>
+    </tr>
+    
+    <?php foreach ($this->paginator as $item): ?>
+        <tr class="<?php echo $this->cycle(array('odd', 'even'))->next(); ?>">
+            <td><?php echo $this->escape($item->id); ?></td>
+            <td><?php echo $this->escape($item['name']); ?></td>
+            <td><?php echo $this->escape($item['email']); ?></td>
+            <td><?php echo $this->escape($item['topic']); ?></td>
+            <td><?php echo $this->escape($item['feeling']); ?></td>
+            <td><?php echo $this->escape($item['feedback']); ?></td>            
+        </tr>
+    <?php endforeach; ?>
+           
+</table>
+
+<?php echo $this->paginationControl($this->paginator, 'Sliding', 'pager.phtml'); ?>

@@ -1,0 +1,45 @@
+(2.1) Zend Overview
+
+Show: "2.1 - Zend Overview"
+
+(2.2) Training Development Environment
+
+Show: Netbeans
+Show: Browse through project directory structure.
+Show: http://zend-training-empty.local
+-  "2.2.1 - Zend Welcome"
+
+Show: Where demo page html is… "application/scripts/index.phtml"
+Follow Along: Have them erase all the HTML and drop in hello world.
+- "2.2.2 - Hello World"
+
+Show: Walk through the application startup
+
+- Apache points to the "public" folder
+
+- .htaccess
+-- If the file being requested exists show it.
+-- Otherwise direct everything to index.php.
+
+- Index.php
+-- Set's application wide constants.
+-- Configures the application.
+-- Bootstraps the application.
+-- Run the application. If using a MVC app the front controller takes over from here.
+
+(2.3) MVC
+
+Show: "2.3.1 - MVC Diagram"
+
+Talking Point: Separation of concerns, separates your html, database / business logic, and logic that handles the web request.
+- Controller: IndexController.php
+- Action: Controllers perform 1+ actions.
+- View: Views are for presentation (ie: html) and are in the scripts folder (eg: index.phtml)
+- Model: Place to store your business logic / database code.
+
+Talking Point: Show Controller and the View in our project. Model doesn't exist yet - we will get to it later.
+
+(2.4) More Info
+
+Talking Point: Check out theZend Framework's website for more info. The quick start guide is handy and the reference guide is key!
+Show: http://framework.zend.com/

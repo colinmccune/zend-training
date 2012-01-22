@@ -1,0 +1,3 @@
+# Exercise - Create a Layout View
+
+Create an file with a <h1> tag called "layout.phtml" in the "application/layouts/scripts" folder and see what happens to the home page.

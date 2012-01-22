@@ -1,0 +1,14 @@
+Clear Cache - Answer
+
+# Layout.phtml
+
+<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'clear-cache'), 'default'); ?>"><?php echo $this->translate('Clear Cache'); ?></a>
+
+# IndexController.php
+
+public function clearCacheAction()
+{
+    $cache = Zend_Registry::get('cache');
+    $cache->clean(Zend_Cache::CLEANING_MODE_ALL);
+    $this->_redirect('index');
+}

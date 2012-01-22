@@ -1,0 +1,32 @@
+# IndexController
+
+public function feedbackAction()
+{
+    $request = $this->getRequest();
+
+    $form = new Application_Form_Feedback();
+
+    if ($this->getRequest()->isPost()) {
+
+        error_log("Is post");
+        error_log(print_r($this->getRequest()->getPost(), true));
+
+        if ($form->isValid($request->getPost())) {
+
+            error_log("Is Valid");
+            error_log(print_r($form->getValues(), true));
+
+        }
+    }
+
+    $this->view->form = $form;
+}
+
+
+# views/scripts/index/feedback.phtml
+
+<h1>Feedback</h1>
+
+<?php
+$this->form->setAction($this->url());
+echo $this->form;

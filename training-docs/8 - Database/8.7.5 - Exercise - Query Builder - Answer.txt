@@ -1,0 +1,16 @@
+A1:
+        $select = $table->select();
+        $select->where('topic = ?', 'board');
+        $select->where('feeling = ?', 10);
+        $result = $db->fetchAll($select); 
+
+A2:
+        $select = $table->select();
+        $select->where('id = ?', 5);
+        $select->orWhere('topic = ?', 'board');
+        $select->orWhere('feeling = ?', 10);
+        $result = $db->fetchAll($select);        
+
+A3:
+        $select = $table->select();
+        $select->limit(5);

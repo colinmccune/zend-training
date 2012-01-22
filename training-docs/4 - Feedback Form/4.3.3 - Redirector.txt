@@ -1,0 +1,16 @@
+# Action Helper: Redirector
+
+The Redirector helper allows you to use a redirector object to fulfill your application's needs for redirecting to a new URL.
+
+gotoSimple($action, $controller = null, $module = null, array $params = array())
+
+http://framework.zend.com/manual/en/zend.controller.actionhelpers.html
+
+# Task
+
+Updated the "Feedback" action so it redirects to the thank you page.
+
+# IndexController.php
+
+//return $this->_helper->redirector('index');
+return $this->_helper->redirector->gotoSimple('thank-you', 'index');

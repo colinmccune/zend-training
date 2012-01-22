@@ -1,0 +1,22 @@
+# IndexController.php
+
+public function feedbackAction()
+{
+
+}
+
+# feedback.phtml
+
+<h1>Feedback</h1>
+
+<p>This is the feedback form</p>
+
+# Test
+
+Browse to /index/feedback
+
+# Link on Home
+
+<li>
+   <a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'feedback')); ?>">Leave Feedback</a>
+</li>

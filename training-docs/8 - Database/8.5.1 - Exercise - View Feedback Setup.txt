@@ -1,0 +1,9 @@
+# View Feedback Action and VIew
+
+1. Create new a action called "viewFeedback".
+
+2. Create new view with some hello world text.
+
+3. Create new route for "/view-feedback".
+
+4. Create new menu item on home page linking to the "View Feedback" page.

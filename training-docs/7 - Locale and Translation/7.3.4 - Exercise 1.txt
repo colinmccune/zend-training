@@ -1,0 +1,5 @@
+Exercise - Translate Text
+
+1. Translate "Feedback Form 2000!", "Help" and "Leave Feedback" on the index.phtml.
+
+2. Bonus - Translate a few words on the Leave Feedback form.

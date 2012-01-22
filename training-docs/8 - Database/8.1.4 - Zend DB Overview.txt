@@ -1,0 +1,34 @@
+Zend_Db
+
+# Database Adapters
+
+- Provides abstract interface to multiple database engines.
+-- Eg: Mysql, Microsoft SQL Server, PostgreSQL, etc.
+
+- Supports both PDO and native database extension.
+
+- CRUD Functions:
+-- insert()
+-- update()
+- delete()
+-- query()
+-- fetchAll()
+
+
+# Quoting SQL values and Identifiers
+- Avoid SQL injections.
+
+
+# Query Builder
+- Build simple or complex SELECT queries using a procedural interface.
+- Useful when your SQL query changes based on application logic.
+
+
+# Table and Row Patterns
+- Zend's equivalent of Action record found in other Fameworks.
+- Provides Tables, Rowsets, and Rows classes which can be easily extended.
+
+
+# Reference
+
+http://devzone.zend.com/content/zendcon_07_slides/Karwin_Bill_ZF-Db-ZendCon-20071009.pdf

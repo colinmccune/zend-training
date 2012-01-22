@@ -1,0 +1,12 @@
+# What is Localization
+
+Localization means that an application can be used from different users which speak different languages. Localization means more than only translating strings. It includes
+
+Zend_Locale: Backend support of locales available for localization support within other Zend Framework components.
+
+Zend_Translate: Translating of strings.
+
+Zend_Date, Zend_Calendar, Zend_Currency, Zend_Locale_Format, Zend_Locale_Data
+
+
+Reference: http://framework.zend.com/manual/en/zend.locale.introduction.html

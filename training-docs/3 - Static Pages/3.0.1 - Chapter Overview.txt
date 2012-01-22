@@ -1,0 +1,11 @@
+# Chapter Objective
+
+Provide an overview of Zend's MVC components (Zend Controller, Zend Action, Zend View, Zend Router) and the Zend URL View Helper.
+
+# Tasks
+
+- Create the application Home page.
+
+- Create a "Help" page.
+
+- Link to the "Help" page with URL View Helper.

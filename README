@@ -1,0 +1,25 @@
+This is an introductory training course to Zend Framework 1.x that I created and presented to a client. I am posting this online in case anyone else might find it useful. These lessons are designed to be delivered in an environment where the trainer has a development machine with its display hooked up to a projector.  Each attending trainee would also have a working development machine so that they may follow along and code exercises.
+
+Each lesson follows a common convention for presenting the material:
+
+  Lesson Plan.txt - This is an outline for the trainer to follow.
+
+    Talking Point: A reminder as to what should be talked about at this point.
+    Show - Put the file or URL in question up on the projector.
+    Follow Along - Have the trainees follow along on their development machines while you code.
+    Exercise - Show the exercise on the projector and have the trainees complete the exercise on their development machines.
+    Exercise Answer - Show the exercise answer.
+    Demo - Give a demonstration.  
+
+  Overview.txt - This is an overview as to what topics will be discussed in the chapter.
+
+  Code.txt - A snippet of code related to the current topic.
+
+  Exercise.txt - Are exercise that should be completed by the trainees.
+
+  Exercise - Answer.txt - Answers to the exercise.
+
+The trainer and the trainees development machines should be staged with the zend project "empty-project".  After the training is done the trainees working zend project should line up with "finished-project".
+
+Enjoy,
+Colin

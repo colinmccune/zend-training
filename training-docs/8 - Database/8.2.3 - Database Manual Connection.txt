@@ -1,0 +1,9 @@
+# Connect to Database and View Feedback Table
+
+1. Open a terminal
+2. mysql5 -u zend_training -p -h xx.xx.xx.xx
+3. show databases;
+4. use zend_training;
+5. show tables;
+6. desc feedback;
+7. select * from feedback;

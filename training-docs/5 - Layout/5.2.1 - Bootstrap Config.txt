@@ -1,0 +1,22 @@
+Zend_Layout::startMvc() creates an instance of Zend_Layout. It then registers a front controller plugin that renders the layout with any application content once the dispatch loop is done, and registers an action helper to allow access to the layout object from your action controllers.
+
+http://framework.zend.com/manual/en/zend.layout.html
+
+
+# Bootstrap.php
+
+protected function _initLayout()
+{
+    // init dependencies
+    $this->bootstrap('FrontController');
+
+    // init resource
+    $layout = Zend_Layout::startMvc();
+    $layout->setLayoutPath(APPLICATION_PATH . '/layouts/scripts');
+
+    // Set the sites layout file to be 'layout.phtml'
+    $layout->setLayout('layout');
+
+    // return resource
+    return $layout;
+}

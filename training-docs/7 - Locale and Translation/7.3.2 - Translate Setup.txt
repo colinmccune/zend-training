@@ -1,0 +1,26 @@
+# Bootstrap.php
+
+protected function _initTranslate()
+{
+    // init dependencies
+    $this->bootstrap('Locale');
+
+    // init resource
+    $french = array(
+        'Home' => 'Accueil'
+    );
+
+    $translate = new Zend_Translate('Array', $french, 'fr', array(
+        'disableNotices' => true
+    ));
+
+    // Set the current language
+    $translate->setLocale($this->locale);
+
+    // register resource
+    Zend_Registry::set('translate', $translate);
+    Zend_Registry::set('Zend_Translate', $translate);
+
+    // return resource
+    return $translate;
+}

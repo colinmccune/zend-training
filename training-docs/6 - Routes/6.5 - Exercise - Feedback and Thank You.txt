@@ -1,0 +1,5 @@
+Exercise: Create Routes For
+
+index/feedback => /feedback
+
+index/thankyou  => /thank-you

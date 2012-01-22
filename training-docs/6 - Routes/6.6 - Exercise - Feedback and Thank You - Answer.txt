@@ -1,0 +1,19 @@
+# Bootstrap.php
+
+// feedback
+$router->addRoute('feedback', new Zend_Controller_Router_Route(
+    'feedback',
+    array(
+        'controller' => 'index',
+        'action'     => 'feedback'
+    )
+));
+
+// thank-you
+$router->addRoute('thank-you', new Zend_Controller_Router_Route(
+    'thank-you',
+    array(
+        'controller' => 'index',
+        'action'     => 'thank-you'
+    )
+)); 

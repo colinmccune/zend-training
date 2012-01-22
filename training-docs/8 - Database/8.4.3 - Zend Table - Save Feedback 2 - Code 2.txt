@@ -1,0 +1,19 @@
+# indexController.php
+
+public function feedbackAction()
+{
+            // save data
+            //$this->_saveFeedback1($form);
+            $this->_saveFeedback2($form);
+}
+
+private function _saveFeedback2($form)
+{
+    error_log(print_r($form->getValues(), true));
+
+    $table = new Application_Model_Feedback();
+
+    $row = $table->createRow();
+    $row->setFromArray($form->getValues());
+    $row->save();
+}

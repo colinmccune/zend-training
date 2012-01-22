@@ -1,0 +1,61 @@
+# 8 - Database
+
+(8.1) Overview
+
+Show: "8.1.0 - Chapter Overview"
+Show: "8.1.1 - Leave Feedback"
+Show: "8.1.2 - Home"
+Show: "8.1.3 - View Feedback"
+Show: "8.1.4 - Zend DB Overview"
+
+
+(8.2) Database Connection Setup
+
+Show: "8.2.1 - Database Schema"
+
+Follow Along: "8.2.2 - Database Setup"
+Follow Along: "8.2.3 - Database Manual Connection"
+
+
+(8.3) Writing Data - Simple SQL Statements
+
+Show: "8.3.1 - Simple SQL - Overview"
+
+Follow Along: "8.3.2 - Simple SQL - Save Feedback 1 - Code"
+Follow Along: Submit data and verify data was saved via console MySQL.
+
+Exercise: "8.3.3 - Simple SQL - Exercise - Save All Fields" 
+Exercise Answer: "8.3.4 - Simple SQL - Exercise - Save All Fields - Answer"
+
+
+(8.4) Writing Data - Zend DB Table
+
+Show: "8.4.1 - Zend Table - Overview"
+
+Follow Along: "8.4.2 - Zend Table - Save Feedback 2 - Code 1"
+Follow Along: "8.4.3 - Zend Table - Save Feedback 2 - Code 2"
+Follow Along: Submit data and verify data was saved via console MySQL.
+
+
+(8.5) Viewing Feedback Setup
+
+Exercise: "8.5.1 - Exercise - View Feedback Setup"
+
+Exercise Answer: "8.5.2 - Exercise - View Feedback Setup - Answer 1"
+Exercise Answer: "8.5.3 - Exercise - View Feedback Setup - Answer 2"
+Exercise Answer: "8.5.4 - Exercise - View Feedback Setup - Answer 3"
+
+
+(8.6) Reading Data - Simple SQL
+
+Follow Along: "8.6.1 - Simple SQL - Reading Data - Code"
+
+
+(8.7) Reading Data - Zend DB Table + Select
+
+Show: "8.7.1 - Zend DB Select - Overview"
+
+Follow Along: "8.7.3 - Zend DB Select - Code"
+
+Exercise: "8.7.4 - Exercise - Query Builder"
+Exercise Answer: "8.7.5 - Exercise - Query Builder - Answer"

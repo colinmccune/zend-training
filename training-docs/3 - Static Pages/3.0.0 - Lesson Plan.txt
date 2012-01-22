@@ -1,0 +1,30 @@
+# 3.0 - Static Pages
+
+Show: "3.0.1 - Chapter Overview"
+
+(3.1) Home Page
+
+Show: "3.1.1 - Home"
+
+Follow Along: "3.1.2 - Home - HTML"
+- Place Content into index.phtml
+
+Exercise: Change the title.
+
+(3.2) Help Page
+
+Show: "3.2.1 - Zends Route System"
+Talking Point: Show IndexController.php and index.phtml.
+
+Talking Point: Let's create the "Help" Page.
+Show "3.2.2 - Help"
+
+Follow Along: "3.2.3 - Help - Code"
+- Open IndexController.php and create a new action called "help".
+- Create a new empty file in "scripts/index" called "help.phtml" and dump in some content. Eg: H1 and P.
+
+Talking Point: Let's Hookup the "Help" link on the "Home" page.
+Follow Along: <a href="/index/help">Help</a>
+
+Show: "3.2.4 - URL View Helper - Overview".
+Follow Along: "3.2.5 - URL View Helper - Help Link"

@@ -1,0 +1,9 @@
+Router Overview
+
+The default URL structure for accessing a controller's action is convenient but not very pretty.
+
+http://hostname.com/(:controller/:action/*)
+
+Thankfully we can customize this.
+
+Let's start by simplifying the help page. We want it to be accessible under "/help".

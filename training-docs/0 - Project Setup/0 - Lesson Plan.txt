@@ -1,0 +1,57 @@
+(0.0) Project Setup
+
+You'll need download the Zend library, setup a apache virtual host, and hostname to use the provided Zend project's empty-project and finished-project.
+
+(0.1) Install Zend
+
+- Download Zend 1.11.x from http://framework.zend.com/
+
+- Extract and copy the Zend.1.11/library/Zend folder to:
+-- empty-project/library
+-- finished-project/library
+
+(0.2) Virtual Host Setup
+
+Setup a virtual host for the empty / finished project
+
+<VirtualHost *:80>
+    ServerName zend-training-empty.local
+    DocumentRoot /PATH/TO/ZEND-TRAINING/empty-project/public
+
+    SetEnv APPLICATION_ENV "development"
+
+    <Directory /PATH/TO/ZEND-TRAINING/empty-project/public>
+        Options +Indexes +MultiViews +FollowSymLinks
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName zend-training-finished.local
+    DocumentRoot /PATH/TO/ZEND-TRAINING/finished-project/public
+
+    SetEnv APPLICATION_ENV "development"
+
+    <Directory /PATH/TO/ZEND-TRAINING/finished-project/public>
+        Options +Indexes +MultiViews +FollowSymLinks
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+</VirtualHost>
+
+
+(0.3) Hostname Setup
+
+Modify your operating systems host file so that zend-training-empty.local and zend-training-finished.local hostnames point to 127.0.0.1.
+
+/etc/hosts
+
+127.0.0.1 zend-training-empty.local
+127.0.0.1 zend-training-finished.local

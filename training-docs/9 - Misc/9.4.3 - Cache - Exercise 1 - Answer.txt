@@ -1,0 +1,42 @@
+# Crunch Data Paged Action and View - Answer
+
+1. Create new a action called Crunch Data.
+
+# IndexController.php
+
+public function crunchDataAction()
+{
+    $counter = 0;
+
+    for ($i = 0; $i < 100000000; $i++) {
+        $counter += 1;
+    }
+    error_log($counter);
+    $this->view->counter = $counter;
+}
+
+2. Create new view.
+
+# crunch-data.phtml
+
+<h1>Crunching.....</h1>
+
+<p>We crunched <?php echo $this->counter; ?> pieces of data.</p>
+
+
+3. Create new route.
+
+# Bootstrap.php
+
+// crunch data
+$router->addRoute('crunch-data', new Zend_Controller_Router_Route(
+    'crunch-data',
+    array(
+        'controller' => 'index',
+        'action'     => 'crunch-data'
+    )
+));
+
+4. Create new menu item on home page.
+
+<li><a href="<?php echo $this->url(array(), 'crunch-data'); ?>"><?php echo $this->translate('Crunch Data'); ?></a></li>

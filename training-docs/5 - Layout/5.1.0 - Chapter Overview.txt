@@ -1,0 +1,11 @@
+# Chapter Objective
+
+Provide an overview of Zend Layout and some useful Zend View Helpers.
+
+# Tasks
+
+- Setup a site wide template using Zend Layout.
+
+- Create a Home link on all pages.
+
+- Use Title, CSS, and JS Placement View Helpers.

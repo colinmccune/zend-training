@@ -1,0 +1,11 @@
+Zend_Translate is Zend Framework's solution for multilingual applications.
+
+In multilingual applications, the content must be translated into several languages and display content depending on the user's language.
+
+- Supports multiple source formats: Zend_Translate supports several source formats, including those supported by PHP, and other formats including TMX and CSV files.
+
+- Easy and generic API: The API of Zend_Translate is very simple and requires only a handful of functions. So it's easy to learn and easy to maintain. All source formats are handled the same way, so if the format of your source files change from Gettext to TMX, you only need to change one line of code to specify the storage adapter.
+
+- Detection of the user's standard language: The preferred language of the user accessing the site can be detected and used by Zend_Translate.
+
+Reference: http://framework.zend.com/manual/en/zend.translate.adapter.html

@@ -1,0 +1,10 @@
+Why is the rendered view stored in $content?
+
+Zend_Layout's front controller plugin has one important feature in addition to rendering the layout: it retrieves all named segments from the response object and assigns them as layout variables, assigning the 'default' segment to the variable 'content'. This allows you to access your application content and render it in your view scripts.
+
+http://framework.zend.com/manual/en/zend.layout.quickstart.html#zend.layout.quickstart.standalone
+
+
+So how does everything end up in the "default segment"?
+
+http://framework.zend.com/manual/en/zend.controller.action.html#zend.controller.action.viewintegration.render

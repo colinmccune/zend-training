@@ -1,0 +1,22 @@
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <?php echo $this->headTitle(); ?>
+        <?php echo $this->headLink(); ?>
+	<?php echo $this->headScript(); ?>
+    </head>
+
+    <body>
+
+        <div id="top-menu">
+            <a href="/">Home</a>
+        </div>
+
+        <div id="content">
+            <?php echo $this->layout()->content; ?>
+        </div>
+
+    </body>
+
+</html>

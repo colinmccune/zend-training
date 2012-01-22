@@ -1,0 +1,29 @@
+# application.css
+
+table {
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+th {
+    background: #DDDDDD;
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr.even {
+    background: #3366FF;
+}
+
+tr.odd {
+    background: #66CCFF;
+}

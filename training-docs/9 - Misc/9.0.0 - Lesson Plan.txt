@@ -1,0 +1,33 @@
+# 9 - Misc
+
+(9.1) Overview
+
+Show: "9.1 - Chapter Overview"
+
+(9.2) Cycle
+
+Show: "8.2.1 - Pretty Table"
+
+Follow Along: "9.2.2 - Pretty Table - CSS"
+Follow Along: "9.2.2 - Pretty Table - View"
+
+(9.3) Paginator
+
+Show: "9.3.1 - Paginator - Overview"
+
+Exercise: "9.3.2 - Paginator - Exercise"
+Exercise Answer: "9.3.3 - Paginator - Exercise - Answer"
+
+Follow Along: "9.3.4 - Paginator - Code"
+
+(9.4) Cache
+
+Show: "9.4.1 - Cache - Overview"
+
+Exercise: "9.4.2 - Cache - Exercise 1"
+Exercise Answer: "9.4.3 - Cache - Exercise 1 - Answer"
+
+Follow Along: "9.3.4 - Cache - Code"
+
+Exercise: "9.4.5 - Cache - Exercise 2"
+Exercise Answer: "9.4.6 - Cache - Exercise 2 - Answer"

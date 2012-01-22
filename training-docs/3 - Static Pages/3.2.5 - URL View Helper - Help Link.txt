@@ -1,0 +1,5 @@
+# Help Link
+
+$this->url(array('controller' => 'index', 'action' => 'help'));
+
+<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'help')); ?>">Help</a>

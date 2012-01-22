@@ -1,0 +1,21 @@
+Exercise - Translate Text - Answer
+
+# index.phtml
+
+<h1 id="title"><?php echo $this->translate('Feedback Form 2000!'); ?></h1>
+
+<li><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'feedback')); ?>"><?php echo $this->translate('Leave Feedback'); ?></a></li>
+
+<li><a href="<?php echo $this->url(array(), 'help'); ?>"><?php echo $this->translate('Help'); ?></a></li>
+
+# bootstrap.php
+
+// init resource
+$french = array(
+    'Home' => 'Accueil',
+    'Leave Feedback' => 'Laissez vos commentaires',
+    'Help' => 'Aide',
+    'Name' => 'Non',
+    'What is your first and last name?' => 'Quel est votre nom et prénom?',
+    'Change Language' => 'Changer la langue'
+);

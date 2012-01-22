@@ -1,0 +1,11 @@
+Chapter Objective
+
+Provide an overview of Zend's Localization Classes.
+
+Tasks
+
+- Set the site's locale.
+
+- Translate Text from English -> French.
+
+- Create a language switcher link.

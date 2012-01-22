@@ -1,0 +1,4 @@
+# Clear Cache
+
+Create a "Clear Cache" link on the top right of all pages. Clicking this link will clear/clean the cache after which you should redirect to home page.
+

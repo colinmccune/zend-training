@@ -1,0 +1,84 @@
+# Intro
+
+http://framework.zend.com/manual/en/zend.paginator.usage.html
+
+
+# IndexController.phtml
+
+public function viewFeedbackPagedAction()
+{
+    $table = new Application_Model_Feedback();
+
+    $paginator = Zend_Paginator::factory($table->select());
+    
+    // should really filter this :)
+    $paginator->setCurrentPageNumber($this->_getParam('page'));
+    
+    $paginator->setItemCountPerPage(3);
+
+    $this->view->paginator = $paginator;
+}
+
+
+# view-feedback-paged.phtml
+
+<?php foreach ($this->paginator as $item): ?>
+    <tr class="<?php echo $this->cycle(array('odd', 'even'))->next(); ?>">
+        <?php error_log(print_r($item, true)); ?>
+        <td><?php echo $this->escape($item->id); ?></td>
+        <td><?php echo $this->escape($item['name']); ?></td>
+        <td><?php echo $this->escape($item['email']); ?></td>
+        <td><?php echo $this->escape($item['topic']); ?></td>
+        <td><?php echo $this->escape($item['feeling']); ?></td>
+        <td><?php echo $this->escape($item['feedback']); ?></td>            
+    </tr>
+<?php endforeach; ?>
+
+<?php echo $this->paginationControl($this->paginator, 'Sliding', 'pager.phtml'); ?>
+
+
+# pager.phtml
+
+<?php if ($this->pageCount): ?>
+<div class="paginationControl">
+<?php echo $this->firstItemNumber; ?> - <?php echo $this->lastItemNumber; ?>
+of <?php echo $this->totalItemCount; ?>
+ 
+<!-- First page link -->
+<?php if (isset($this->previous)): ?>
+  <a href="<?php echo $this->url(array('page' => $this->first)); ?>">
+    First
+  </a> |
+<?php else: ?>
+  <span class="disabled">First</span> |
+<?php endif; ?>
+ 
+<!-- Previous page link -->
+<?php if (isset($this->previous)): ?>
+  <a href="<?php echo $this->url(array('page' => $this->previous)); ?>">
+    &lt; Previous
+  </a> |
+<?php else: ?>
+  <span class="disabled">&lt; Previous</span> |
+<?php endif; ?>
+ 
+<!-- Next page link -->
+<?php if (isset($this->next)): ?>
+  <a href="<?php echo $this->url(array('page' => $this->next)); ?>">
+    Next &gt;
+  </a> |
+<?php else: ?>
+  <span class="disabled">Next &gt;</span> |
+<?php endif; ?>
+ 
+<!-- Last page link -->
+<?php if (isset($this->next)): ?>
+  <a href="<?php echo $this->url(array('page' => $this->last)); ?>">
+    Last
+  </a>
+<?php else: ?>
+  <span class="disabled">Last</span>
+<?php endif; ?>
+ 
+</div>
+<?php endif; ?>

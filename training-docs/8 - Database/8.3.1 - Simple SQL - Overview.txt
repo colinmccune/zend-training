@@ -1,0 +1,40 @@
+# Intro
+
+Zend_Db_Adapter provide a simple SQL database interface for Zend Framework.
+
+This class is used to define your connection to the database and can also be used to:
+
+
+# Read results from the database (select queries)
+
+$sql = 'SELECT * FROM bugs WHERE bug_id = ?';
+$result = $db->fetchAll($sql, 2);
+
+
+# Write results to the database (update/insert)
+
+$data = array(
+    'created_on'      => '2007-03-22',
+    'bug_description' => 'Something wrong',
+    'bug_status'      => 'NEW'
+);
+ 
+$db->insert('bugs', $data);
+
+
+# Delete entries from the database (delete)
+
+$n = $db->delete('bugs', 'bug_id = 3');
+
+
+# Quote values and identifiers (avoid sql injection)
+
+$sql = $db->quoteInto("SELECT * FROM bugs WHERE reported_by = ?", "O'Reilly");
+ 
+echo $sql;
+// SELECT * FROM bugs WHERE reported_by = 'O\'Reilly'
+
+
+# Reference
+
+http://framework.zend.com/manual/en/zend.db.adapter.html

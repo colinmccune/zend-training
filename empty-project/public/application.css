@@ -1,0 +1,17 @@
+#title {
+    text-align: center;
+}
+
+#menu {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* Counteract to IE5/Win Hack */
+    padding:15px;
+    border:1px dashed #333;
+    background-color:#eee;        
+}
+
+#copyright {
+    text-align: center;
+}

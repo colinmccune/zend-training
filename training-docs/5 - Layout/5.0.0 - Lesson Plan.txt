@@ -1,0 +1,50 @@
+# 5.0 Layout
+
+(5.1) Overview
+
+Show: "5.1.0 - Chapter Overview"
+
+Show: "5.1.1 - Home Link"
+
+Talking Point: Browse through all our pages (Home, Help, Signup, Thank You). Right now we have no way to get back to home. Lets add a "Home" link to every page. What are some ways to do this? Add it to the top of every view… Annoying! Better Zend Layout.
+
+Show: "5.1.2 - Layout Description"
+Show: "5.1.3 - Layout Diagram"
+
+(5.2) Setup
+
+Follow Along: "5.2.1 - Bootstrap Config"
+
+Exercise: "5.2.2 - Layout - Simple - Exercise"
+Exercise Answer: "5.2.2 - Layout - Simple - Exercise - Answer"
+
+Talking Point: Where is the content?
+
+Follow Along: "5.2.3 - Layout - Full Code" 
+Show: "5.2.4 - Layout - Full"
+Talking Point: We now have a common layout across all the pages.
+
+Show: "5.2.5 - Layout - Response Object Segments"
+
+
+(5.3) Help Link
+
+Exercise: "5.3.1 - Home Link - Exercise"
+Show: "5.3.2 - Home Link - Home"
+Show: "5.3.3 - Home Link - Feedback"
+Exercise Answer: "5.3.4 - Home Link - Exercise - Answer"
+
+
+(5.4) Layout Placeholders
+
+Talking Point: What are headTitle, headStyle, and headScript?
+Show: 5.4.1 - Layout - View Helpers
+
+Talking Point: Where do we set the content of these helpers?
+Show: "5.4.2 - Layout - View Helpers - Config"
+
+Show: Enable doctype and look at html source page now.
+Show: Enable title and look at html page.
+
+Exercise: "5.4.4 - Layout - View Helpers - Exercise"
+Exercise Answer: "5.4.5 - Layout - View Helpers - Exercise - Answer"

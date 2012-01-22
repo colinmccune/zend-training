@@ -1,0 +1,3 @@
+# Exercise - Home Link
+
+Let's create a "Home" link on the top of all pages that takes us back to the home/index page.

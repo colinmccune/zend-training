@@ -1,0 +1,66 @@
+# View Feedback Paged Action and View - Answer
+
+1. Create new a action called "viewFeedbackPaged".
+
+# IndexController.phtml
+
+public function viewFeedbackPagedAction()
+{
+
+}
+
+
+2. Create new view with the same content as the "view-feedback.phtml"
+
+# view-feedback-paged.phtml
+
+<h1>View Feedback Paged</h1>
+
+<table>
+    
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>topic</th>
+        <th>feeling</th>
+        <th>feedback</th>
+    </tr>
+    
+    <?php foreach ($this->paginator as $item): ?>
+        <tr class="<?php echo $this->cycle(array('odd', 'even'))->next(); ?>">
+            <?php error_log(print_r($item, true)); ?>
+            <td><?php echo $this->escape($item->id); ?></td>
+            <td><?php echo $this->escape($item['name']); ?></td>
+            <td><?php echo $this->escape($item['email']); ?></td>
+            <td><?php echo $this->escape($item['topic']); ?></td>
+            <td><?php echo $this->escape($item['feeling']); ?></td>
+            <td><?php echo $this->escape($item['feedback']); ?></td>            
+        </tr>
+    <?php endforeach; ?>
+           
+</table>
+
+<?php echo $this->paginationControl($this->paginator, 'Sliding', 'pager.phtml'); ?>
+
+
+3. Create new route for "/view-feedback-paged" and configure the route to have a "page" parameter with a default value of "1".
+
+# Bootstrap.php
+
+// view feedback paged
+$router->addRoute('view-feedback-paged', new Zend_Controller_Router_Route(
+    'view-feedback-paged/:page',
+    array(
+        'controller' => 'index',
+        'action'     => 'view-feedback-paged',
+        'page'       => 1
+    )
+));
+
+
+4. Create new menu item on home page linking to the "View Feedback Paged" page.
+
+# index.phtml
+
+<li><a href="<?php echo $this->url(array(), 'view-feedback-paged'); ?>"><?php echo $this->translate('View Feedback Paged'); ?></a></li>

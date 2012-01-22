@@ -1,0 +1,19 @@
+# IndexController.php
+
+/*
+    When an action name consists of more then one word you use camel casing   and keep the first letter lowercase.
+*/
+
+public function thankYouAction()
+{
+       
+}
+
+
+
+# views/scripts/index/thank-you.phtml
+
+<!-- When an action name consists of more then one word the view  filename will use a dash for the word separator. EG: "thank-you.phtml". -->
+
+<h1>Thank You</h1>
+<p>Thanks for wasting out time! We will be sure to get back to your shortly.... But only if we feel like it!</p>

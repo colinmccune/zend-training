@@ -1,0 +1,23 @@
+# Training Objective
+
+Provide an overview of the key Zend Framework components.
+
+To accomplish this task we will build a simple website that allows users to submit and view a feedback form. 
+
+Each chapter will cover one or more Zend components and build on each other.
+
+# Components We Will Cover
+
+Zend MVC (View, Controller, Action, Router, etc)
+Zend View Helpers (URL, etc)
+Zend Action Helpers (Redirect)
+Zend Form
+Zend Validate and Filter
+Zend Layout
+Zend Locale
+Zend Session
+Zend Translation
+Zend Registry
+Zend DB (Adapter, Table, Select)
+Zend Paginator
+Zend Cache

@@ -1,0 +1,7 @@
+Exercises
+
+1. Set the page title on the help page to be "Feedback Form 2000! : Help"
+
+
+2a. Enable headLink and create the missing "/public/application.css". 
+2b. Move the inline css from index.phtml to the application.css

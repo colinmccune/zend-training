@@ -1,0 +1,24 @@
+# IndexController.php
+
+public function viewFeedbackAction()
+{
+    
+}
+
+# view-feedback.phtml
+
+<h1>View Feedback</h1>
+
+# Bootstrap.php
+
+// view feedback
+$router->addRoute('view-feedback', new Zend_Controller_Router_Route(
+    'view-feedback',
+    array(
+        'controller' => 'index',
+        'action'     => 'view-feedback'
+    )
+)); 
+
+# index.phtml
+<li><a href="<?php echo $this->url(array(), 'view-feedback'); ?>"><?php echo $this->translate('View Feedback'); ?></a></li>

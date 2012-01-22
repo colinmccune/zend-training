@@ -1,0 +1,14 @@
+# Exercise: Leave Feedback Page
+
+1. Create a new action in the index controller called "feedback".
+
+
+2. Create a new view for the "feedback" action with some dummy text.
+
+
+3. Verify the action and view are working.
+
+Browse to: /index/feedback
+
+
+4. Create a link to the "Leave Feedback" page on the "Home" page.

@@ -1,0 +1,9 @@
+Chapter Objective
+
+Provide an overview of Zend's Controller Router
+
+Tasks
+
+- Create friendly URLs using Zend's Router.
+
+- Link to friendly URLs with Zend's URL helper.

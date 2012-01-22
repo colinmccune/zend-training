@@ -1,0 +1,16 @@
+# Bootstap.php
+
+protected function _initRoutes()
+
+$router->addRoute('help', new Zend_Controller_Router_Route(
+    'help',
+    array(
+        'controller' => 'index',
+        'action'     => 'help'
+    )
+));
+
+
+Now test: http://feedback.local/help
+
+

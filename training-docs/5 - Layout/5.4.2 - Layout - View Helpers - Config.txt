@@ -1,0 +1,31 @@
+# Bootstrap.php
+
+protected function _initView()
+{
+    // init dependencies
+    $this->bootstrap('Frontcontroller');
+
+    // init resource
+    $view = new Zend_View();
+
+    // init xhtml
+    //$view->doctype(Zend_View_Helper_Doctype::XHTML1_STRICT);
+    //$view->setEncoding('UTF-8');
+
+    // init meta tags
+    //$view->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=UTF-8');        
+
+    // init title
+    //$view->headTitle()->setSeparator(' : ');
+    //$view->headTitle($view->translate('Feedback Form 2000!'));
+
+    // init css
+    //$view->headLink()->appendStylesheet('/application.css');
+
+    // init js
+    //$view->headScript()->appendFile('/application.js');
+
+    // return resource
+    return $view;        
+
+}

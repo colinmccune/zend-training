@@ -1,0 +1,71 @@
+Bootstrap.php
+
+protected function _initCache()
+{
+    // init resource
+
+    // We choose a backend (for example 'File' or 'Sqlite'...)
+    $backendName = 'File';
+
+    // We choose a frontend (for example 'Core', 'Output', 'Page'...)
+    $frontendName = 'Core';
+
+    // We set an array of options for the chosen frontend
+    $frontendOptions = array(
+        'automatic_serialization' => true
+    );
+
+    // We set an array of options for the chosen backend
+    $backendOptions = array(
+        'cache_dir' => APPLICATION_PATH . '/../data/cache'            
+    );
+
+    // We create an instance of Zend_Cache
+    // (of course, the two last arguments are optional)
+    $cache = Zend_Cache::factory($frontendName,
+                                 $backendName,
+                                 $frontendOptions,
+                                 $backendOptions);
+
+    Zend_Registry::set('cache', $cache);
+}
+
+IndexController.php
+
+public function crunchDataAction()
+{
+    $cacheId = 'crunchData';
+
+    $cache = Zend_Registry::get('cache');
+
+
+    if (($counter = $cache->load($cacheId)) === false)
+    {
+        // cache miss
+        $cacheStatus = 'Cache Miss :(';
+
+        // do time consuming work....
+        $counter = 0;
+
+        for ($i = 0; $i < 100000000; $i++) {
+            $counter += 1;
+        }
+
+        // save result to cache
+        $cache->save($counter, $cacheId);
+    } else {
+        $cacheStatus = 'Cache Hit!!!';
+    }
+
+    $this->view->cacheStatus = $cacheStatus;
+    $this->view->counter = $counter;
+}
+
+
+crunch-data.phtml
+
+<h1>Crunching.....</h1>
+
+<p>We crunched <?php echo $this->counter; ?> pieces of data.</p>
+
+<strong><?php echo $this->cacheStatus; ?></strong>

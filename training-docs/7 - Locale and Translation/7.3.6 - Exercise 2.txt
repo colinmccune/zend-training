@@ -1,0 +1,21 @@
+Exercise 2 - Language Switcher
+
+Goal: Add a language switcher to the top right of all pages.
+
+1. Use Zend_Session to store the locale.
+- Init Zend_Session in the Bootstrap.php
+- Hint: Starting a Session - http://framework.zend.com/manual/en/zend.session.advanced_usage.html
+
+2. Set the locale based off the value in the session and default to en.
+- Default locale = en
+- Modify initLocale to set the locale based of the value stored in the session.
+- Hint: Use the 'Default' Session Namespace.
+- Store the default locale (en) in the session if none is set.
+
+3. Create a new action  
+- Action Name = Change Language
+- Toggle between EN/FR.
+- Redirect back to home after change locale.
+- No View
+
+4. Create a "Change Language" link on the top of all the pages.

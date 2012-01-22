@@ -1,0 +1,25 @@
+# Bootstrap.php
+
+http://framework.zend.com/manual/en/zend.db.adapter.html
+
+protected function _initDb()
+{
+    // init resource
+    $db = Zend_Db::factory('Pdo_Mysql', array(
+        'host' => '192.168.1.64',
+        'username' => 'zend_training',
+        'password' => 'zend_training',
+        'dbname' => "zend_training",
+        'charset' => 'utf8',
+    ));
+
+    // set default table adapter
+    Zend_Db_Table_Abstract::setDefaultAdapter($db);
+
+    // register resource
+    Zend_Registry::set('db', $db);
+    Zend_Registry::set('Zend_Db', $db);
+
+    // return resource
+    return $db;
+}

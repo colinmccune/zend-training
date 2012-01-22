@@ -1,0 +1,33 @@
+# How do URLs map to logic in this framework?
+
+Zend MVC's component uses a router to map URLs to a Controllers's Action.
+
+By default Zend Router is configured with the Default route:
+        
+$router->addRoute('default', new Zend_Controller_Router_Route(
+            ':@controller/:@action/*',
+            array(
+                'controller' => 'index',
+                'action' => 'index'
+            )
+        ));
+
+
+# Examples:
+
+1. http://feedback.local/index/help
+- Controller = index
+- Action = help
+
+2. http://feedback.local/index/index
+- Controller = index
+- Action = index
+
+3. http://feedback.local/
+- Controller = not set so default is used (index)
+- Action = not set so default is used (index)
+
+4. http://feedback.local/index/view/id/5
+- Controller = index
+- Action = view
+- id = 5 (paramater)

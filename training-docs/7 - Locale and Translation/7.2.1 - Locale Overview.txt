@@ -1,0 +1,23 @@
+What is a Locale?
+
+In computing, locale is a set of parameters that defines the user's language, country and any special variant preferences that the user wants to see in their user interface.
+
+
+How are Locale's Represented?
+
+Locale identifiers consist of information about the user's language and preferred/primary geographic region (e.g. state or province of home or workplace).
+
+Locale identifier strings used in Zend Framework are internationally defined standard abbreviations of language and region, written as language_REGION.
+
+
+Examples:
+
+en = English
+
+en_CA = English Canada
+
+en_US = English USA
+
+fr = French
+
+fr_CA = French Canada

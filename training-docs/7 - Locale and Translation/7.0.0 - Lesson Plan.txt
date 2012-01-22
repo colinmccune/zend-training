@@ -1,0 +1,26 @@
+# 7. Localization
+
+(7.1) Overview
+
+Show: "7.1.0 - Chapter Overview"
+Show: "7.1.1 - End Result"
+Show: "7.1.2 - Zend Localization Overview
+
+(7.2) Locale
+
+- Show: "7.2.1 - Locale Overview"
+- Follow Along: "7.2.2 - Locale Setup"
+
+(7.3) Translation
+
+- Show: "7.3.1 - Translate Overview"
+
+- Follow Along: "7.3.2 - Translate Setup"
+- Follow Along: "7.3.3 - Translate Hello"
+- Follow Along: Change Locale = FR in Bootstrap to see Translation.
+
+- Exercise: "7.3.4 - Exercise 1"
+- Exercise Answer: "7.3.5 - Exercise 1 - Answer"
+
+- Exercise: "7.3.5 - Exercise 2"
+- Exercise Answer: "7.3.6 - Exercise 2 - Answer"`

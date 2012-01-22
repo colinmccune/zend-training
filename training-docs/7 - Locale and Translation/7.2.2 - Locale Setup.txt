@@ -1,0 +1,23 @@
+# Intro
+
+If we are going to localize this site we need to tell Zend what locale we are.
+
+It can auto detect or you programatically grab it from the URL.
+
+To keep things simple lets hardcode it to 'en' for now.
+
+
+# Bootstrap.php
+
+protected function _initLocale()
+{
+    // init resource
+    $locale = new Zend_Locale('en');    // hardcode locale = en
+
+    // register resource
+    Zend_Registry::set('locale', $locale);
+    Zend_Registry::set('Zend_Locale', $locale);
+
+    // return resource
+    return $locale;
+}

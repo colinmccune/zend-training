@@ -1,0 +1,30 @@
+<?php
+ 
+class Application_Form_Feedback extends Zend_Form
+{
+    public function init()
+    {
+        
+        // Set the method for the display form to POST
+        $this->setMethod('post');
+
+        
+        // Name
+        $element = new Zend_Form_Element_Text('name');
+        $element->setLabel('Name');
+        $element->setDescription('What is your first and last name?');
+        $element->setRequired(true);
+        $element->addFilter('StringTrim');
+        $element->addValidator('Alpha');
+        
+        $this->addElement($element);
+        
+
+        // Submit
+        $this->addElement('submit', 'submit', array(
+            'ignore'   => true,
+            'label'    => 'Submit Feedback',
+        ));
+ 
+    }
+}

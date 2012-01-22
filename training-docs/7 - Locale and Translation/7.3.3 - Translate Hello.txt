@@ -1,0 +1,12 @@
+# Layout.phtml
+
+<a href="/"><?php echo $this->translate('Home'); ?></a>
+
+# Params
+
+$date = array("Monday", "April", "11:20:55");
+$this->translate("Today is %1\$s in %2\$s. Actual time: %3\$s", $date);
+
+# Reference
+
+http://framework.zend.com/manual/en/zend.view.helpers.html

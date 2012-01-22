@@ -1,0 +1,26 @@
+# layout.phtml
+
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headTitle(); ?>
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headScript(); ?>
+
+	<body>
+
+        <div id="content">
+            <?php echo $this->layout()->content; ?>
+        </div>
+        
+	</body>
+
+</html>
+
+
+# Note 
+
+Zend Controllers and Zend Views the content rendered from your view is placed into the content variable.
