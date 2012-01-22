@@ -5,10 +5,15 @@ Each lesson follows a common convention for presenting the material:
   Lesson Plan.txt - This is an outline for the trainer to follow.
 
     Talking Point: A reminder as to what should be talked about at this point.
+
     Show - Put the file or URL in question up on the projector.
+
     Follow Along - Have the trainees follow along on their development machines while you code.
+
     Exercise - Show the exercise on the projector and have the trainees complete the exercise on their development machines.
+
     Exercise Answer - Show the exercise answer.
+
     Demo - Give a demonstration.  
 
   Overview.txt - This is an overview as to what topics will be discussed in the chapter.
